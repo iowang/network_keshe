@@ -58,8 +58,12 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
         jsp = new JScrollPane(jta);
 
         jp = new JPanel();
-        jtf = new JTextField(30);
+//        设置文本框的高度，字体大小
+        jtf = new JTextField();
+        jtf.setPreferredSize(new Dimension(480,40));
+        jtf.setFont(font);
         jb = new JButton("发送");
+        jb.setFont(font);
 //        将文本框和按钮添加到面板中
         jp.add(jtf);
         jp.add(jb);

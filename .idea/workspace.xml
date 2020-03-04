@@ -53,7 +53,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Application.ClientChatMain">
+  <component name="RunManager" selected="Application.ServerChatMain">
     <configuration name="ClientChatMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.chat.ClientChatMain" />
       <module name="NetworkHomework" />
@@ -82,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientChatMain" />
         <item itemvalue="Application.ServerChatMain" />
+        <item itemvalue="Application.ClientChatMain" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583205447440</updated>
-      <workItem from="1583205451620" duration="11095000" />
+      <workItem from="1583205451620" duration="14168000" />
     </task>
     <task id="LOCAL-00001" summary="第一次没优化">
       <created>1583243102786</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583243102786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第二版优化了字体的显示">
+      <created>1583295991233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583295991233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,37 +133,38 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次没优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次没优化" />
+    <MESSAGE value="第二版优化了字体的显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二版优化了字体的显示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1252" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1583234870170">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1252" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1583234870170" />
-    <state x="436" y="117" key="CommitChangelistDialog2" timestamp="1583295917630">
+    <state x="436" y="117" key="CommitChangelistDialog2" timestamp="1583295991174">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="436" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583295917630" />
+    <state x="436" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583295991174" />
     <state x="663" y="275" key="FileChooserDialogImpl" timestamp="1583219896541">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="663" y="275" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583219896541" />
-    <state width="1868" height="280" key="GridCell.Tab.0.bottom" timestamp="1583295810484">
+    <state width="1868" height="280" key="GridCell.Tab.0.bottom" timestamp="1583298947433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583295810484" />
-    <state width="1868" height="280" key="GridCell.Tab.0.center" timestamp="1583295810484">
+    <state width="1868" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
+    <state width="1868" height="280" key="GridCell.Tab.0.center" timestamp="1583298947433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583295810484" />
-    <state width="1868" height="280" key="GridCell.Tab.0.left" timestamp="1583295810484">
+    <state width="1868" height="280" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
+    <state width="1868" height="280" key="GridCell.Tab.0.left" timestamp="1583298947433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583295810484" />
-    <state width="1868" height="280" key="GridCell.Tab.0.right" timestamp="1583295810484">
+    <state width="1868" height="280" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
+    <state width="1868" height="280" key="GridCell.Tab.0.right" timestamp="1583298947433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583295810484" />
+    <state width="1868" height="280" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
     <state x="483" y="169" key="SettingsEditor" timestamp="1583220770220">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
