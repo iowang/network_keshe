@@ -49,9 +49,11 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
 //    构造方法
 
     public ClientChatMain() {
+        Font font = new Font("Serif", 0, 20);
         jta = new JTextArea();
-//        设置文本域不可编辑
+//        设置文本域不可编辑,调整字体大小
         jta.setEditable(false);
+        jta.setFont(font);
 //        将文本域添加在滚动条中
         jsp = new JScrollPane(jta);
 
