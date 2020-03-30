@@ -1,4 +1,4 @@
-package cn.itcast.chat;
+package cn.wzh.chat;
 
 import javax.swing.*;
 import java.awt.*;

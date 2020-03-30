@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a25b055-c100-49b0-b17f-4ed5c22326ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NetworkHomework/cn/itcast/chat/ClientChatMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NetworkHomework/cn/itcast/chat/ClientChatMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NetworkHomework/cn/itcast/chat/ServerChatMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NetworkHomework/cn/itcast/chat/ServerChatMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/itcast/chat/ClientChatMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/chat/ClientChatMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/itcast/chat/ServerChatMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/chat/ServerChatMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +47,45 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="/usr/lib/jvm/jdk1.8.0_231/src.zip!/" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="Application.ServerChatMain">
+  <component name="RunManager" selected="Application.ClientChatMain (1)">
+    <configuration name="ClientChatMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.wzh.chat.ClientChatMain" />
+      <module name="NetworkHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.wzh.chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientChatMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.chat.ClientChatMain" />
       <module name="NetworkHomework" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.itcast.chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerChatMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.wzh.chat.ServerChatMain" />
+      <module name="NetworkHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.wzh.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,8 +108,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServerChatMain" />
+        <item itemvalue="Application.ClientChatMain (1)" />
+        <item itemvalue="Application.ServerChatMain (1)" />
         <item itemvalue="Application.ClientChatMain" />
+        <item itemvalue="Application.ServerChatMain" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +137,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583205447440</updated>
-      <workItem from="1583205451620" duration="14168000" />
+      <workItem from="1583205451620" duration="14998000" />
+      <workItem from="1583302177224" duration="1457000" />
+      <workItem from="1583322097300" duration="9000" />
+      <workItem from="1583322228755" duration="1669000" />
+      <workItem from="1583636888612" duration="74000" />
+      <workItem from="1585566940990" duration="772000" />
     </task>
     <task id="LOCAL-00001" summary="第一次没优化">
       <created>1583243102786</created>
@@ -125,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583295991233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第二版优化了字体的显示">
+      <created>1583299016691</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583299016691</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,37 +181,45 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1252" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1583234870170" />
-    <state x="436" y="117" key="CommitChangelistDialog2" timestamp="1583295991174">
+    <state x="787" y="426" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585566959382">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="436" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583295991174" />
-    <state x="663" y="275" key="FileChooserDialogImpl" timestamp="1583219896541">
+    <state x="787" y="426" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585566959382" />
+    <state x="436" y="117" key="CommitChangelistDialog2" timestamp="1585569501613">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="663" y="275" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583219896541" />
-    <state width="1868" height="280" key="GridCell.Tab.0.bottom" timestamp="1583298947433">
+    <state x="436" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585569501613" />
+    <state x="663" y="275" key="FileChooserDialogImpl" timestamp="1585567015345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
-    <state width="1868" height="280" key="GridCell.Tab.0.center" timestamp="1583298947433">
+    <state x="663" y="275" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1585567015345" />
+    <state width="1868" height="265" key="GridCell.Tab.0.bottom" timestamp="1585569537966">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
-    <state width="1868" height="280" key="GridCell.Tab.0.left" timestamp="1583298947433">
+    <state width="1868" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585569537966" />
+    <state width="1868" height="265" key="GridCell.Tab.0.center" timestamp="1585569537965">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
-    <state width="1868" height="280" key="GridCell.Tab.0.right" timestamp="1583298947433">
+    <state width="1868" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585569537965" />
+    <state width="1868" height="265" key="GridCell.Tab.0.left" timestamp="1585569537965">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583298947433" />
-    <state x="483" y="169" key="SettingsEditor" timestamp="1583220770220">
+    <state width="1868" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585569537965" />
+    <state width="1868" height="265" key="GridCell.Tab.0.right" timestamp="1585569537966">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="483" y="169" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583220770220" />
+    <state width="1868" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585569537966" />
+    <state x="483" y="169" key="SettingsEditor" timestamp="1585567025909">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="483" y="169" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1585567025909" />
     <state x="884" y="273" key="Vcs.Push.Dialog.v2" timestamp="1583243217666">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="884" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583243217666" />
+    <state x="564" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1583636889823">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="564" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583636889823" />
   </component>
 </project>
