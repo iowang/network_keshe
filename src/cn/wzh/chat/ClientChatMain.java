@@ -2,16 +2,13 @@ package cn.wzh.chat;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.*;
 import java.io.*;
 import java.net.Socket;
 import java.util.Properties;
 
 //有界面所以需要继承窗体类JFrame
-public class ClientChatMain extends JFrame implements ActionListener, KeyListener {
+public class ClientChatMain extends JFrame implements ActionListener, KeyListener, MouseListener {
     public static void main(String[] args) {
         new ClientChatMain();
     }
@@ -25,8 +22,9 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
     private JPanel jp;
     //    文本框
     private JTextField jtf;
-    //    按钮
+    //    按钮jb 用来发送消息，jb2用来传输文件
     private JButton jb;
+    private JButton jb2;
     //    输出流
     private BufferedWriter bw;
 
@@ -60,13 +58,16 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
         jp = new JPanel();
 //        设置文本框的高度，字体大小
         jtf = new JTextField();
-        jtf.setPreferredSize(new Dimension(480,40));
+        jtf.setPreferredSize(new Dimension(460, 40));
         jtf.setFont(font);
         jb = new JButton("发送");
+        jb2 = new JButton("传文件");
         jb.setFont(font);
+        jb2.setFont(font);
 //        将文本框和按钮添加到面板中
         jp.add(jtf);
         jp.add(jb);
+        jp.add(jb2);
 
 //        将滚动条和面板添加到窗体
         this.add(jsp, BorderLayout.CENTER);
@@ -74,14 +75,15 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
 //        设置标题,大小，位置，关闭，是否可见
 
         this.setTitle("聊天客户端");
-        this.setSize(600, 500);
-        this.setLocation(600, 300);
+        this.setSize(660, 500);
+        this.setLocation(900, 300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
 //        ************TCP客户端Start**************
 //         给发送按钮绑定监听事件
         jb.addActionListener(this);
         jtf.addKeyListener(this);
+        jb2.addMouseListener(this);
         try {
 //        创建客户端套接字(尝试链接)
             Socket socket = new Socket(clientIp, clientPort);
@@ -147,6 +149,40 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
 
     @Override
     public void keyReleased(KeyEvent keyEvent) {
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        JFileChooser jFileChooser = new JFileChooser();
+        jFileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        jFileChooser.showDialog(new Label(), "选择文件");
+        File file = jFileChooser.getSelectedFile();
+        if (file.isDirectory()) {
+            System.out.println("文件夹：" + file.getAbsolutePath());
+        } else if (file.isFile()) {
+            System.out.println("文件：" + file.getAbsolutePath());
+        }
+        System.out.println(jFileChooser.getSelectedFile().getName());
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
 
     }
 }
