@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a25b055-c100-49b0-b17f-4ed5c22326ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/wzh/upfile/FileChooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/wzh/chat/ClientChatMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/wzh/chat/ClientChatMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/wzh/chat/ServerChatMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/wzh/chat/ServerChatMain.java" afterDir="false" />
@@ -36,20 +37,23 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1YbJdU2VFKANGf3ogk12qdAZrZ3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="/usr/lib/jvm/jdk1.8.0_231/src.zip!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -158,7 +162,10 @@
       <workItem from="1583322097300" duration="9000" />
       <workItem from="1583322228755" duration="1669000" />
       <workItem from="1583636888612" duration="74000" />
-      <workItem from="1585566940990" duration="5215000" />
+      <workItem from="1585566940990" duration="5538000" />
+      <workItem from="1585652146773" duration="8943000" />
+      <workItem from="1585723240785" duration="23000" />
+      <workItem from="1586088932190" duration="5091000" />
     </task>
     <task id="LOCAL-00001" summary="第一次没优化">
       <created>1583243102786</created>
@@ -188,17 +195,26 @@
       <option name="project" value="LOCAL" />
       <updated>1585569569624</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="增加了文件传输功能">
+      <created>1585574084911</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585574084911</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次没优化" />
     <MESSAGE value="第二版优化了字体的显示" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="增加了文件传输功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了文件传输功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1252" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1585573829784">
@@ -209,30 +225,46 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="787" y="426" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585566959382" />
-    <state x="436" y="117" key="CommitChangelistDialog2" timestamp="1585569569449">
+    <state x="436" y="117" key="CommitChangelistDialog2" timestamp="1585574084851">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="436" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585569569449" />
-    <state x="663" y="275" key="FileChooserDialogImpl" timestamp="1585567015345">
+    <state x="436" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585574084851" />
+    <state x="663" y="275" key="FileChooserDialogImpl" timestamp="1585723260999">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="663" y="275" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1585567015345" />
-    <state width="1868" height="265" key="GridCell.Tab.0.bottom" timestamp="1585574046439">
+    <state x="663" y="275" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1585723260999" />
+    <state width="1868" height="265" key="GridCell.Tab.0.bottom" timestamp="1586093592374">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585574046439" />
-    <state width="1868" height="265" key="GridCell.Tab.0.center" timestamp="1585574046438">
+    <state width="1868" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586093592374" />
+    <state width="1868" height="265" key="GridCell.Tab.0.center" timestamp="1586093592374">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585574046438" />
-    <state width="1868" height="265" key="GridCell.Tab.0.left" timestamp="1585574046438">
+    <state width="1868" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586093592374" />
+    <state width="1868" height="265" key="GridCell.Tab.0.left" timestamp="1586093592373">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585574046438" />
-    <state width="1868" height="265" key="GridCell.Tab.0.right" timestamp="1585574046439">
+    <state width="1868" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586093592373" />
+    <state width="1868" height="265" key="GridCell.Tab.0.right" timestamp="1586093592374">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1868" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585574046439" />
+    <state width="1868" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586093592374" />
+    <state width="1868" height="346" key="GridCell.Tab.1.bottom" timestamp="1586092794485">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586092794485" />
+    <state width="1868" height="346" key="GridCell.Tab.1.center" timestamp="1586092794484">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="346" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586092794484" />
+    <state width="1868" height="346" key="GridCell.Tab.1.left" timestamp="1586092794484">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="346" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586092794484" />
+    <state width="1868" height="346" key="GridCell.Tab.1.right" timestamp="1586092794484">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="346" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586092794484" />
     <state x="483" y="169" key="SettingsEditor" timestamp="1585567025909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -241,10 +273,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="884" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583243217666" />
-    <state x="564" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1583636889823">
+    <state x="564" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1585723241100">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="564" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583636889823" />
+    <state x="564" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585723241100" />
     <state x="697" y="285" key="extract.method.dialog" timestamp="1585573870014">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

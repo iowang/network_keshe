@@ -105,8 +105,31 @@ public class ServerChatMain extends JFrame implements ActionListener, KeyListene
             bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 //        循环读取数据
             String line = null;
+            PrintStream ps = new PrintStream(socket.getOutputStream());
             while ((line = br.readLine()) != null) {
-                jta.append(line + System.lineSeparator());
+                if (line.equals("客户端：我向你发送了文件，请接收")) {
+                    String fileName = br.readLine();
+                    File dir = new File("Upload");
+                    dir.mkdir();
+                    File file = new File(dir, fileName);
+                    FileOutputStream fos = new FileOutputStream(file);
+                    byte[] bytes = new byte[1024];
+                    int len = 0;
+                    while ((len = in.read(bytes, 0, bytes.length)) != -1) {
+//                        String str = new String(bytes,"UTF-8");
+//                        System.out.println(str);
+//                        System.out.println(len);
+//                        if (str.equals("It is end of transform the file")) break;
+                        fos.write(bytes, 0, len);
+                        fos.flush();
+                    }
+
+                    fos.close();
+
+                } else {
+                    jta.append(line + System.lineSeparator());
+                }
+//                jta.append(line + System.lineSeparator());
             }
 //        关闭socket通道
             serverSocket.close();
@@ -193,4 +216,6 @@ public class ServerChatMain extends JFrame implements ActionListener, KeyListene
     public void mouseExited(MouseEvent e) {
 
     }
+
+
 }
