@@ -184,9 +184,6 @@ public class ClientChatMain extends JFrame implements ActionListener, KeyListene
                     ps.write(bytes,0,len);
                     ps.flush();
                 }
-                String flag=new String("It is end of transform the file".getBytes(),"UTF-8");
-                ps.println(flag);
-                ps.flush();
                 fis.close();
                 JOptionPane.showMessageDialog(null,"文件传输成功");
             } catch (Exception e1) {

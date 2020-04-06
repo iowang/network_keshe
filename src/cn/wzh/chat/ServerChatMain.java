@@ -116,14 +116,10 @@ public class ServerChatMain extends JFrame implements ActionListener, KeyListene
                     byte[] bytes = new byte[1024];
                     int len = 0;
                     while ((len = in.read(bytes, 0, bytes.length)) != -1) {
-//                        String str = new String(bytes,"UTF-8");
-//                        System.out.println(str);
-//                        System.out.println(len);
-//                        if (str.equals("It is end of transform the file")) break;
                         fos.write(bytes, 0, len);
                         fos.flush();
+                        if(len!=1024) break;
                     }
-
                     fos.close();
 
                 } else {
